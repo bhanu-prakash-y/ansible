@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    Course: "LearnDEV"
-    Duration: "150HRS"
-    Learning: "Bhanu"
+    COURSE: "LearnDEV"
+    DURATION: "140HRS"
+    TRAINER: "Prakash"
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "Course is:{{ Course }}, Learning is {{ Learning }}"
+      msg: "Course is: {{ COURSE }}, Trainer is: {{ TRAINER }}"
